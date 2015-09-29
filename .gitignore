@@ -62,3 +62,19 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+######################################################
+*.suo
+*.csproj
+*.sln
+
+*.user
+*.sdf
+*.opensdf
+
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+_obj
