@@ -62,7 +62,10 @@ int main(int argc, char* argv[])
 	while (true) {
 		draw(img);
 		shared_img.upload(img);
-		cv::imshow("img", img);
+
+		cv::Mat resized_img;
+		cv::resize(img, resized_img, cv::Size(320, 240));
+		cv::imshow("SharedImage_OpenCV", resized_img);
 
 		int c = cv::waitKey(1);
 		if (c == 27) break;
