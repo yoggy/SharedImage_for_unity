@@ -1,0 +1,13 @@
+*.suo
+*.csproj
+
+*.user
+*.sdf
+*.opensdf
+
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+_obj
