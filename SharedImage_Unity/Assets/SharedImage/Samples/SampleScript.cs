@@ -7,11 +7,9 @@ public class SampleScript : MonoBehaviour {
     SharedImageDownloader shared_image;
 
 	void Start () {
+        // setup shared image texture
         material = gameObject.GetComponent<Renderer>().material;
         shared_image = gameObject.GetComponent<SharedImageDownloader>();
-	}
-	
-	void Update () {
         material.mainTexture = shared_image.sharedTexture;
     }
 }

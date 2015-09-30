@@ -5,7 +5,7 @@
 #include "SharedImage_OpenCV.h"
 
 SharedImage::SharedImage(const char *name, const int &width, const int &height)
-	: shmem_(INVALID_HANDLE_VALUE), buf_(nullptr), flip_h_(false), flip_v_(true)
+	: shmem_(INVALID_HANDLE_VALUE), buf_(nullptr), flip_h_(false), flip_v_(false)
 {
 	this->name_ = name;
 	int shmem_size = width * height * 4;
